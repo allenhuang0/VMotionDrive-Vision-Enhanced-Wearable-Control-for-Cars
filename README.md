@@ -1,5 +1,11 @@
 # MotionDrive: Vision Enhanced Wearable Control for Cars
-M202 Final Project
+
+This repo is created for the M202 Final Project in Fall 2023
+
+## Team Member
+
+* Guanyu Qian
+* Allen (Yilun) Huang
 
 ## Table of Contents
 
