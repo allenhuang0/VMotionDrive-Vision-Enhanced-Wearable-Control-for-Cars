@@ -20,9 +20,12 @@ This repo is created for the M202 Final Project in Fall 2023
 ## Setup
 
 ### Hardware 
+
 * Raspberry Pi 4
+* 
 
 ### Software
+
 * Python
 * C
   
