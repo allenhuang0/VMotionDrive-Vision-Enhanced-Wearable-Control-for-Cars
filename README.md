@@ -25,7 +25,7 @@ In the expansive domain of autonomous driving, where vehicles often operate in i
 
 The arena of vehicular control has seen significant advances over the years, with computer vision and wearable tech emerging as two popular solutions. However, each approach comes with its challenges.
 
-While adept at capturing gestures, vision-only systems often have difficulty achieving the precision needed for car controls, especially in environments with variable lighting or obstructions. On the other hand, while promising accuracy, wearable-only solutions suffer from their continuous signal transmission, which can blur the boundaries of intentional commands, leading to ambiguity in deciphering the driver's exact intent. We aim to capitalize on the expansive gesture recognition of the former and the precision of the latter by fusing vision with wearables.
+While adept at capturing gestures, vision-only systems often have difficulty achieving the precision needed for car controls, especially in environments with variable lighting or obstructions. On the other hand, while promising accuracy, wearable-only solutions suffer from their continuous signal transmission, which can blur the boundaries of intentional commands. We aim to capitalize on the gesture recognition of the former and the precision of the latter by fusing vision with wearables.
 
 ## Objective
 
