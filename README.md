@@ -1,4 +1,4 @@
-# MotionDrive: Vision Enhanced Wearable Control for Cars
+# VMotionDrive: Vision Enhanced Wearable Control for Cars
 
 This repo is created for the M202 Final Project in Fall 2023
 
