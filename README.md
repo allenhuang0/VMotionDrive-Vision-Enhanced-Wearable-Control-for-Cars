@@ -39,7 +39,7 @@ We aim to use computer vision for gesture recognition utilizing Python and an ac
 ### Hardware 
 
 * Raspberry Pi 4
-* 
+* ...
 
 ### Software
 
