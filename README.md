@@ -47,4 +47,5 @@ We aim to use computer vision for gesture recognition utilizing Python and an ac
 
 * Python
 
-![](images/images/gesture_demo.png)
+## Gesture Extraction
+![](images/gesture_demo.png)
