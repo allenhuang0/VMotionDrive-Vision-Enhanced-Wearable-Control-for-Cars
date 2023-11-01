@@ -42,6 +42,7 @@ We aim to use computer vision for gesture recognition utilizing Python and an ac
 * Laptop for vision processing
 * Motors
 * Router
+* Camera
 
 ### Software
 
