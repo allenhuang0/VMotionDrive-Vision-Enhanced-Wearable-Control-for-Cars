@@ -47,5 +47,4 @@ We aim to use computer vision for gesture recognition utilizing Python and an ac
 
 * Python
 
-
-![alt text](https://github.com/QGY511/VMotionDrive-Vision-Enhanced-Wearable-Control-for-Cars/tree/main/images/gesture_demo.png?raw=true)
+![](images/images/gesture_demo.png)
