@@ -49,7 +49,7 @@ We aim to use computer vision for gesture recognition utilizing Python and an ac
 * Python
 
 ### Prototype (Nov 1, 2023)
-![](images/gesture_prototype.png)
+![](images/prototype.png)
 
 ## Gesture Extraction
 ![](images/gesture_demo.png)
