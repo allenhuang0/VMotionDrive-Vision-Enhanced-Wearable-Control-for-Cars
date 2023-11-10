@@ -6,9 +6,8 @@ This repo is created for the M202 Final Project in Fall 2023
 
 1. [Team](#team)
 2. [Abstract](#abstract)
-3. [Background](#background)
-4. [Objective](#objective)
-5. [Setup](#setup)
+3. [Objective](#objective)
+4. [Setup](#setup)
 
 
 
@@ -20,11 +19,6 @@ This repo is created for the M202 Final Project in Fall 2023
 ## Abstract
 
 In the expansive domain of autonomous driving, where vehicles often operate in isolation from human intervention, our innovation strives to reintroduce human interaction – but from a perspective not previously explored. Instead of being limited within the cabin, we imagine a world where drivers can step out and control their vehicles from the outside. This proposal is advantageous for narrow parking situations or navigating congested areas.
-
-## Background 
-
-The arena of vehicular control has seen significant advances over the years, with computer vision and wearable tech emerging as two popular solutions. However, each approach comes with its challenges.
-
 While adept at capturing gestures, vision-only systems often have difficulty achieving the precision needed for car controls, especially in environments with variable lighting or obstructions. On the other hand, while promising accuracy, wearable-only solutions suffer from their continuous signal transmission, which can blur the boundaries of intentional commands. We aim to capitalize on the gesture recognition of the former and the precision of the latter by fusing vision with wearables.
 
 ## Objective
