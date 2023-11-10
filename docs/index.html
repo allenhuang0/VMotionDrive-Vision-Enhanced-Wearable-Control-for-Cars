@@ -1,15 +1,79 @@
-<section id="abstract">
-  <h2>Abstract</h2>
-  <p>Your abstract text goes here...</p>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Project's Name</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.7.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+    body {
+        padding-top: 54px;
+    }
+    @media (min-width: 992px) {
+        body {
+            padding-top: 56px;
+        }
+    }
+    /* Additional styling can be added here */
+</style>
+</head>
+<body>
 
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Your Project's Name</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#abstract">Abstract
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#team">Team</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-<section id="team">
-  <h2>Our Team</h2>
-  <ul>
-    <li>Member 1 - Role</li>
-    <li>Member 2 - Role</li>
-    <li>Member 3 - Role</li>
-    <!-- Add more team members as needed -->
-  </ul>
-</section>
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Abstract Section -->
+    <section id="abstract" class="mt-4">
+        <h2 class="mb-4">Abstract</h2>
+        <p>Your abstract content goes here. Explain the purpose and the vision of your project in a concise and informative manner.</p>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="mt-4">
+        <h2 class="mb-4">Our Team</h2>
+        <div class="row">
+            <!-- Team Member -->
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="http://placehold.it/300x200" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Member Name</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Position or Role</h6>
+                        <p class="card-text">Brief description or biography of the team member. This section can include their contributions to the project.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for other team members -->
+        </div>
+    </section>
+
+</div>
+<!-- /.container -->
+
+</body>
+</html>
