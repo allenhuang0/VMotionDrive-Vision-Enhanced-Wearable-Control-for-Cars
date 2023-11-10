@@ -23,9 +23,8 @@ While adept at capturing gestures, vision-only systems often have difficulty ach
 
 ## Objective
 
-Our approach is to interpret hand movements as sequenced motions. A gesture is not seen as an isolated movement but as part of a continuum. The initial hand gesture acts as an activation sign, a starting point for sending instruction signals. The wearable device then steps in and refines these commands, offering precise and nuanced control over the vehicle. 
-
-We aim to use computer vision for gesture recognition utilizing Python and an accelerometer for the wearable device to send xyz signals.
+Our approach is to interpret hand movements as sequenced motions. A gesture is not seen as an isolated movement but as part of a continuum. The initial hand gesture acts as an activation sign, a starting point for sending instruction signals. The wearable device then steps in and refines these commands, offering precise and nuanced control over the vehicle.\
+We aim to use computer vision for gesture recognition utilizing Python and an accelerometer for the wearable device to send XYZ signals.
 
 
 ## Setup
