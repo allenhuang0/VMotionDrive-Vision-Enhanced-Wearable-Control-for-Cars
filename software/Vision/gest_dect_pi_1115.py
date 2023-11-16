@@ -93,6 +93,8 @@ while cap.isOpened():
             prev_angle_x, prev_angle_y = angle_x, angle_y
             '''
             
+            #allen can add wearable control here
+            
             if direction_result == "left":
                 PWM.setMotorModel(-4000,-4000,4000,4000)  # Left
                 
