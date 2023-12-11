@@ -59,3 +59,6 @@ We aim to use computer vision for gesture recognition utilizing Python and an ac
 ![](images/wearable.png)
 ![](images/wearable2.png)
 
+### final (Dec 10, 2023)
+![](images/final_car.png)
+![](images/testing.png)
