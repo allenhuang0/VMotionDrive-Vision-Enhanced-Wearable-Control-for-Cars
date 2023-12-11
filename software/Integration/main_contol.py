@@ -21,7 +21,7 @@ def calculate_direction(largest_landmarks):
 
 
 
-
+# setting parameter for cam.
 class CameraStream:
     def __init__(self, src=0):
         self.capture = cv2.VideoCapture(src, cv2.CAP_V4L2)
@@ -91,13 +91,8 @@ try:
                 mp_drawing.draw_landmarks(frame, largest_landmarks, mp_hands.HAND_CONNECTIONS)
                 direction_result = calculate_direction(largest_landmarks)
                 
-                # Motor control logic based on direction_result
-                # (Your motor control code here...)
-                
-                
-
-
         s=data_main(direction_result)
+        
         if s!=0:
             sp= abs(4000-s)
         else:
@@ -105,15 +100,15 @@ try:
             
         print(s,sp)
         if direction_result == "left":
-            PWM.setMotorModel(-int(0.8*s),-int(0.8*s),int(0.8*s),int(0.8*s))  # Left         
+            PWM.setMotorModel(-int(0.8*s),-int(0.8*s),int(0.8*s),int(0.8*s))         
                 
         elif direction_result == "right":
 
-            PWM.setMotorModel(int(0.8*sp),int(0.8*sp),-int(0.8*sp),-int(0.8*sp))  # Right
+            PWM.setMotorModel(int(0.8*sp),int(0.8*sp),-int(0.8*sp),-int(0.8*sp))
                 
         elif direction_result == 'backward':
        
-            PWM.setMotorModel(sp,sp,sp,sp)  
+            PWM.setMotorModel(sp,sp,sp,sp)
             
         elif direction_result == 'forward':
                     

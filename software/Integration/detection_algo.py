@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Oct 24 16:21:59 2023
-
-@author: qianguanyu
-"""
-
 import mediapipe as mp
 import math
 import numpy as np

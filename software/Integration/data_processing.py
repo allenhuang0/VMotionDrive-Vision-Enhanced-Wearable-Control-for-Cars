@@ -4,8 +4,8 @@ from esp32_test_receiver import start_server
 from data_storage import shared_data
 import math
 
-# Choose the plane to print: "XOY", "YOZ", or "XOZ"
-selected_plane = "XOY"  # Change to "XOY", "YOZ", or "XOZ" as needed
+
+selected_plane = "XOY"
 
 # Global state for yaw calculation
 yaw_xoz = 0.0
@@ -94,8 +94,3 @@ def data_main(direction):
     print(f"Calculated speed: {speed}")
     return speed
 
-if __name__ == "__main__":
-    # Example usage
-    direction = "forward"  # Example direction, change as needed
-    calculated_speed = data_main(direction)
-    print(f"Speed for direction '{direction}': {calculated_speed}")
