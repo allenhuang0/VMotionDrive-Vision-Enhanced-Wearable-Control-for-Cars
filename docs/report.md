@@ -34,7 +34,17 @@ This section should cover the following items:
 
 # 3. Technical Approach
 
-# 4. Evaluation and Results
+A. Overview
+Figure xx shows an overview of our car's system structure. The system is divided into two major signal-processing components. The first comes from MPU6050 Gyro data, which is connected to Esp 32 by wire connection, and then uses esp32 wireless transmission to Raspberry Pi via web socket. The camera detects gestures as the second signal processing component. The Raspberry Pi will process the data from both ends and then integrate it to operate the motor, which will provide the car's direction. 
+B. Gesture Recognition 
+C. CV Optimization
+D. Wearable 
+D.1 Data Transmission to ESP32: The data from the MPU6050 sensor is transmitted via a wired connection to an ESP32 microcontroller. The ESP32 serves as a critical node in our system, bridging the gap between the physical gesture inputs and the digital processing unit.
+D.2 Wireless Communication to Raspberry Pi: Once the ESP32 receives the gyro data, it transmits this information wirelessly to the Raspberry Pi through a WebSocket connection. This method ensures a real-time and reliable transfer of gestural data for processing.
+D.3 Data Optimization
+D.4 Data Conversion  
+E. Integration 
+
 
 # 5. Discussion and Conclusions
 
