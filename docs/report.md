@@ -13,22 +13,28 @@ In the expansive domain of autonomous driving, where vehicles often operate in i
 
 # 1. Introduction
 
-This section should cover the following items:
 
-* Motivation & Objective: This project aimed to transform how we interact with vehicles. We aimed to enable drivers to control their cars from outside, using gestures and wearables. This approach was born from the desire to make urban driving more manageable and intuitive, especially in tight spaces like narrow parking and congested areas.
+## Motivation & Objective
+ This project aimed to transform how we interact with vehicles. We aimed to enable drivers to control their cars from outside, using gestures and wearables. This approach was born from the desire to make urban driving more manageable and intuitive, especially in tight spaces like narrow parking and congested areas.
 
 
-* State of the Art & Its Limitations: Currently, autonomous driving technologies rely heavily on in-car controls and automated systems. While recent advancements in vision-based gesture control are impressive, they offer only discrete control options, limiting their practicality in complex driving scenarios. Our project sought to overcome this by integrating vision-based systems with wearable technology, allowing for more nuanced, continuous control — akin to using a hand as a mouse to navigate more precisely.
+## State of the Art & Its Limitations
+ Currently, autonomous driving technologies rely heavily on in-car controls and automated systems. While recent advancements in vision-based gesture control are impressive, they offer only discrete control options, limiting their practicality in complex driving scenarios. Our project sought to overcome this by integrating vision-based systems with wearable technology, allowing for more nuanced, continuous control — akin to using a hand as a mouse to navigate more precisely.
 
-* Novelty & Rationale: The innovative aspect of our project lies in this seamless integration of gesture recognition with wearable tech. This combination enables continuous, fluid control commands, a significant leap from the binary commands typical in current systems. This approach will succeed because it aligns with natural human movements, making it more intuitive and effective for users.
+## Novelty & Rationale 
+The innovative aspect of our project lies in this seamless integration of gesture recognition with wearable tech. This combination enables continuous, fluid control commands, a significant leap from the binary commands typical in current systems. This approach will succeed because it aligns with natural human movements, making it more intuitive and effective for users.
 
-* Potential Impact:  We can extend this method to many other applications. Specifically, We envision a world where I can turn it into a virtual mouse or an interactive tool for various devices with a flick of the hand. This technology can seamlessly integrate into everyday life, transforming our interactions with our surroundings. I could use gestures in smart homes to control lighting and temperature, creating a more responsive and intuitive living environment. It could revolutionize how presentations are conducted in office settings, making interactions more engaging and fluid.
+## Potential Impact 
+ We can extend this method to many other applications. Specifically, We envision a world where I can turn it into a virtual mouse or an interactive tool for various devices with a flick of the hand. This technology can seamlessly integrate into everyday life, transforming our interactions with our surroundings. I could use gestures in smart homes to control lighting and temperature, creating a more responsive and intuitive living environment. It could revolutionize how presentations are conducted in office settings, making interactions more engaging and fluid.
 
-* Challenges: One of the primary challenges lies in creating a gesture recognition system that boasts high accuracy and reliability across diverse environments. Moreover, minimizing the latency in gesture recognition is a significant consideration for precise control, especially considering the computational power limitations of the Raspberry Pi platform. Additionally, ensuring a fluid transition between the wearable control and vision recognition modes is crucial to maintaining system efficacy and user engagement. Lastly, it is essential to design these wearables in a way that they are intuitive, user-friendly, and comfortable for prolonged use, thereby encouraging widespread adoption and a positive user experience.
+## Challenges 
+One of the primary challenges lies in creating a gesture recognition system that boasts high accuracy and reliability across diverse environments. Moreover, minimizing the latency in gesture recognition is a significant consideration for precise control, especially considering the computational power limitations of the Raspberry Pi platform. Additionally, ensuring a fluid transition between the wearable control and vision recognition modes is crucial to maintaining system efficacy and user engagement. Lastly, it is essential to design these wearables in a way that they are intuitive, user-friendly, and comfortable for prolonged use, thereby encouraging widespread adoption and a positive user experience.
 
-* Requirements for Success: To successfully complete our project,  we need access to technologies like MediaPipe for advanced media processing, along with algorithms designed to accelerate processing speeds. Proficiency in 3D printing is crucial for creating wearables, as is expertise in signal processing for accurate data interpretation. The project also demands high-performance computing solutions to address the limitations of platforms like Raspberry Pi.
-
-* Metrics of Success: Success metrics for this project focus on several key performance indicators. High accuracy in gesture recognition is essential to ensure the system reliably interprets user commands. Low latency is also critical, as it directly impacts the system's responsiveness and efficiency. Seamless integration of vision and wearables is vital to demonstrating the system's adaptability and compatibility. A practical functionality test will be the system's ability to control a vehicle through a predetermined test course, demonstrating its effectiveness in real-world scenarios. 
+## Requirements for Success
+ To successfully complete our project,  we need access to technologies like MediaPipe for advanced media processing, along with algorithms designed to accelerate processing speeds. Proficiency in 3D printing is crucial for creating wearables, as is expertise in signal processing for accurate data interpretation. The project also demands high-performance computing solutions to address the limitations of platforms like Raspberry Pi.
+ 
+## Metrics of Success 
+Success metrics for this project focus on several key performance indicators. High accuracy in gesture recognition is essential to ensure the system reliably interprets user commands. Low latency is also critical, as it directly impacts the system's responsiveness and efficiency. Seamless integration of vision and wearables is vital to demonstrating the system's adaptability and compatibility. A practical functionality test will be the system's ability to control a vehicle through a predetermined test course, demonstrating its effectiveness in real-world scenarios. 
 
 # 2. Related Work
 
