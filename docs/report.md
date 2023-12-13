@@ -85,6 +85,41 @@ PWM signal generation for motor control: The integrated control signals are conv
 
 # 4. Evaluation and Results
 
+## Testing
+Our evaluation strategy is meticulously designed to thoroughly assess the performance and reliability of our autonomous vehicle control system, encompassing both controlled and real-world testing environments.
+
+### Stationary Testing:
+* This test aims to isolate and evaluate the system's response to input controls in a static environment.
+* The vehicle is positioned with its wheels off the ground, simulating movement without physical displacement.
+* Testing Protocol: We execute a series of predefined gestures and gyroscopic inputs, observing the system's response in controlling the vehicle's wheels. This method allows us to precisely measure the response time and accuracy of the control system in a controlled environment, free from external variables.
+
+### Routine Testing:
+
+* Unlike stationary testing, routine testing places the vehicle in a real-world setting, where it navigates a predetermined course.
+* Using gestures and gyroscopic inputs, we control the vehicle through various maneuvers, replicating typical usage scenarios. The test is recorded, and a link to the video is provided for visual reference and analysis.
+* This test evaluates the system’s adaptability to real-world conditions, including its response to environmental variables and its navigation and obstacle avoidance capabilities.
+
+
+## In-Depth Performance Metrics
+
+To quantitatively assess the system, we focus on three critical metrics: latency, consistency, and robustness, each offering insights into different aspects of system performance.
+
+
+### Latency:
+* We employ a sophisticated time-stamping method in the command window during operation to accurately measure the system's response time to various gestures.
+* We conduct multiple trials for each gesture, aggregating the data to plot a comprehensive latency profile. This statistical approach allows us to determine the average latency and its standard deviation, providing insight into the system’s response time and its variability.
+* The average latency of around 0.22 seconds, combined with low variability, indicates a highly responsive system.
+
+### Consistency:
+* Consistency is evaluated through a detailed analysis of the linear relationship between gyroscopic data (input) and motor speed (output). This is done by incrementally increasing the gyro angle and measuring the corresponding wheel speed.
+* A dynamic graph or animated visualization is used to demonstrate this relationship, offering a clear and intuitive understanding of how input variations translate to motor control.
+
+### Robustness:
+* Robustness is tested by deliberately creating scenarios where camera-detected gestures and gyroscopic data are misaligned. For example, if the camera detects a forward gesture but the gyro does not register the corresponding orientation, the vehicle should not move.
+* Error handling is crucial for evaluating the system's error-handling capabilities and ensuring operational safety, especially in scenarios where incorrect gesture interpretation could lead to unintended movements.
+
+
+
 # 5. Discussion and Conclusions
 
 # 6. References
