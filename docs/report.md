@@ -60,7 +60,7 @@ Wireless data relay to Raspberry Pi: The ESP32 uses a Wi-Fi module to transmit t
 
 ### Wearable Design and Optimization
 
-To improve the quality of the data received from the MPU6050 sensor, we apply a moving average filter to the equation given below. This filter is crucial to mitigate the effects of transient noise and improve the overall clarity of the signal. As shown in Figure xx, the implementation of this filter improves the quality of the signal by smoothing out erratic fluctuations and noise. 
+To improve the quality of the data received from the MPU6050 sensor, we apply a moving average filter to the equation given below. This filter is crucial to mitigate the effects of transient noise and improve the overall clarity of the signal. As shown in the following table, the implementation of this filter improves the quality of the signal by smoothing out erratic fluctuations and noise. 
 
 In our system, the process of transforming raw sensor data into a format suitable for vehicle control is both complex and essential. This raw data consists of linear acceleration and angular velocity measurements from the MPU6050 sensor. The conversion process is based on a specific formula. It starts by converting the accelerometer data into angular measurements. These angular measurements are crucial because they directly relate to the vehicle's angle of rotation. By accurately determining these angles, we can precisely control the vehicle's linear speed and effectively determine its direction. The control logic uses the roll and pitch angles to define the four primary directional movements: Forward, reverse, left, and right.
 
@@ -84,18 +84,14 @@ Key to the efficiency of our pipeline is the implementation of a queuing system.
 
 A key enhancement to our CV pipeline is the transition from YUYV to MJPEG (Motion JPEG) video format. This strategic change addresses the bandwidth and processing power limitations of the YUYV format. By adopting MJPEG, which compresses each video frame independently, we have achieved a significant reduction in data size. This reduction allows video frames to be processed more quickly without sacrificing image quality, which is critical for accurate gesture recognition and interpretation.
 
-Further refinements to our pipeline include setting optimal parameters for the MJPEG format. By setting the frame rate to 20fps and the resolution to 640x360, we've been able to strike a balance between image clarity and system performance. This specific configuration not only improves the accuracy of gesture recognition but also results in a significant reduction in CPU usage - around 15%. This reduction in processing demand translates directly into improved energy efficiency, as shown in Figure xx.
+Further refinements to our pipeline include setting optimal parameters for the MJPEG format. By setting the frame rate to 20fps and the resolution to 640x360, we've been able to strike a balance between image clarity and system performance. This specific configuration not only improves the accuracy of gesture recognition but also results in a significant reduction in CPU usage - around 15%. This reduction in processing demand translates directly into improved energy efficiency, as shown in the figure.
 
+
+![](images/pipeline.png)
 
 ## Motor Control
 
 PWM signal generation for motor control: The integrated control signals are converted to PWM outputs. These signals precisely control the vehicle's motor controllers, regulating speed and steering mechanisms based on the user's gestures.
-
-
-
-
-
-
 
 # 4. Evaluation and Results
 
@@ -135,6 +131,9 @@ To quantitatively assess the system, we focus on three critical metrics: latency
 
 
 # 5. Discussion and Conclusions
+
+
+
 
 # 6. References
 
