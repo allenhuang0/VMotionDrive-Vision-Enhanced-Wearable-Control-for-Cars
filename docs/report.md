@@ -90,7 +90,7 @@ Key to the efficiency of our pipeline is the implementation of a queuing system.
 
 A key enhancement to our CV pipeline is the transition from YUYV to MJPEG (Motion JPEG) video format. This strategic change addresses the bandwidth and processing power limitations of the YUYV format. By adopting MJPEG, which compresses each video frame independently, we have achieved a significant reduction in data size. This reduction allows video frames to be processed more quickly without sacrificing image quality, which is critical for accurate gesture recognition and interpretation.
 
-Further refinements to our pipeline include setting optimal parameters for the MJPEG format. By setting the frame rate to 20fps and the resolution to 640x360, we've been able to strike a balance between image clarity and system performance. This specific configuration not only improves the accuracy of gesture recognition but also results in a significant reduction in CPU usage - around 15%. This reduction in processing demand translates directly into improved energy efficiency, as shown in the figure.
+Further refinements to our pipeline include setting optimal parameters for the MJPEG format. By setting the frame rate to 20fps and the resolution to 640x360, we have been able to strike a balance between image clarity and system performance. This specific configuration not only improves the accuracy of gesture recognition but also results in a significant reduction in CPU usage - around 15%. This reduction in processing demand translates directly into improved energy efficiency, as shown in the figure.
 
 
 ![](images/pipeline.png)
