@@ -57,6 +57,17 @@ Wireless data relay to Raspberry Pi: The ESP32 uses a Wi-Fi module to transmit t
 
 ### Wearable Design and Optimization
 
+To improve the quality of the data received from the MPU6050 sensor, we apply a moving average filter to the equation given below. This filter is crucial to mitigate the effects of transient noise and improve the overall clarity of the signal. As shown in Figure xx, the implementation of this filter improves the quality of the signal by smoothing out erratic fluctuations and noise. 
+
+In our system, the process of transforming raw sensor data into a format suitable for vehicle control is both complex and essential. This raw data consists of linear acceleration and angular velocity measurements from the MPU6050 sensor. The conversion process is based on a specific formula. It starts by converting the accelerometer data into angular measurements. These angular measurements are crucial because they directly relate to the vehicle's angle of rotation. By accurately determining these angles, we can precisely control the vehicle's linear speed and effectively determine its direction. The control logic uses the roll and pitch angles to define the four primary directional movements: Forward, reverse, left, and right.
+
+The Euler angles - roll, pitch, and yaw - were chosen specifically for their intuitiveness and natural alignment with the physical movements of the vehicle. They provide a more interpretable and user-friendly format for vehicle control, greatly enhancing the ease of interaction with the system. In our system design, the relationship between Euler angles and vehicle motion is direct and clearly defined:
+
+
+![](images/angle.png)
+
+These Euler angles provide a precise and comprehensive description of the user's intended gestures, enabling the system to accurately interpret and execute the speed of the vehicle's movements.
+
 
 ## Camera-based Gesture Detection System
 
