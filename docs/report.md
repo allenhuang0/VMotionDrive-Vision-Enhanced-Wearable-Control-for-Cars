@@ -15,7 +15,7 @@ In the expansive domain of autonomous driving, where vehicles often operate in i
 
 
 ## Motivation & Objective
- This project aimed to transform how we interact with vehicles. We aimed to enable drivers to control their cars from outside, using gestures and wearables. This approach was born from the desire to make urban driving more manageable and intuitive, especially in tight spaces like narrow parking and congested areas.
+ This project aimed to transform how we interact with vehicles. We aimed to enable drivers to control their cars from outside, using gestures and wearables. This approach can potentially make urban driving more manageable, especially in narrow parking and congested areas.
 
 
 ## State of the Art & Its Limitations
