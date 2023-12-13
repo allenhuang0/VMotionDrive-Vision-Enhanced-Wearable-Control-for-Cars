@@ -32,6 +32,11 @@ This section should cover the following items:
 
 # 2. Related Work
 
+The work (DOI: 10.1007/978-3-031-05544-7_19) presents a fascinating intersection of gesture recognition and robot control by exploring the innovative approach of controlling a ROS car using the Mediapipe framework. However, there are some limitations to this approach that arise from running the computer vision algorithms on a personal computer.
+One of the main drawbacks of running CV on a PC is that the reliance on a PC for processing limits the mobility and scalability of the system. For a truly mobile and flexible application, it would be advantageous to integrate the CV capabilities directly into the ROS car or to use more portable computing solutions. The current setup requires the ROS car to be within the effective range of the PC's processing and communication capabilities, which limits the operational range of the vehicle.
+It is worth noting that many YouTube projects use discrete control using similar technologies and requiring a stationary camera setup relative to the person making the gestures. While these projects are innovative, they sometimes face challenges in gesture intuitiveness and interpretability, pointing to underlying Explainable AI (XAI) issues. In addition, these projects rely on a PC to run the computer vision algorithms, as opposed to the more integrated approach for the embedded systems. This reliance can introduce additional complexity and potential latency in the processing of the gestures. Nevertheless, these projects collectively contribute to the evolving landscape of gesture-based control in robotics, each offering unique insights and methodologies that push the boundaries of human-computer interaction.
+
+
 # 3. Technical Approach
 
 # 4. Evaluation and Results
