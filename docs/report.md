@@ -9,7 +9,7 @@
 
 # Abstract
 
-In autonomous driving, where vehicles often operate in isolation from human intervention, our innovation strives to reintroduce human interaction – but from a perspective not previously explored. Instead of being limited within the cabin, we imagine a world where drivers can step out and control their vehicles from the outside. Our proposal is advantageous for narrow parking situations or navigating congested areas. While good at recognizing gestures, vision based systems often have difficulty achieving the precision needed for car controls, especially for moving getures. On the other hand, while promising accuracy, wearable-only solutions suffer from their continuous signal transmission, which can blur the boundaries of intentional commands. We aim to invent a novel contorl scheme with seamless intergration of vision and wearable.
+In autonomous driving, where vehicles often operate in isolation from human intervention, our innovation strives to reintroduce human interaction – but from a perspective not previously explored. Instead of being limited within the cabin, we imagine a world where drivers can step out and control their vehicles from the outside. Our proposal is advantageous for narrow parking situations or navigating congested areas. While good at recognizing gestures, vision-based systems often have difficulty achieving the precision needed for car controls, especially for moving gestures. On the other hand, while promising accuracy, wearable-only solutions suffer from their continuous signal transmission, which can blur the boundaries of intentional commands. We aim to invent a novel control scheme that seamlessly integrates vision and wearable devices.
 
 # 1. Introduction
 
@@ -25,20 +25,20 @@ While recent advancements in vision-based gesture control are emerging, many of 
 The innovative aspect of our project lies in this seamless integration of gesture recognition with wearable (gyro). This combination enables continuous and fluid control commands, a significant step from the discrete commands typical in current systems. This approach further supports the different hand motions, making the gestures more intuitive and effective for users.
 
 ## Potential Impact 
- We can extend this method to many other applications. For example, we can use this control mode to turn our hands into controllers/mouse/remotes and so on 
+ We can extend this method to many other applications. For example, we can use this control mode to turn our hands into controllers/mice/remotes, and so on. 
 
 ## Challenges 
 One of the primary challenges is creating a gesture recognition system that has a high accuracy and low processing time. Moreover, minimizing the latency in gesture recognition is a significant consideration for precise control, especially considering the computational power limitations of the Raspberry Pi platform. Additionally, ensuring a fluid transition between the wearable control and vision recognition modes is crucial to maintaining system efficacy and user engagement. Lastly, it is essential to design these wearables in a way that they are intuitive, user-friendly, and comfortable for prolonged use, thereby encouraging widespread adoption and a positive user experience.
 
 ## Requirements for Success
- To successfully complete our project,  we need access to technologies like MediaPipe for accurate hand recognitions, along with pipelines designed to accelerate processing speeds. The project also employ data filtering to get valid angle/acceleration data.
+ To successfully complete our project,  we need access to technologies like MediaPipe for accurate hand recognitions, along with pipelines designed to accelerate processing speeds. The project also employs data filtering to get valid angle/acceleration data.
  
 ## Metrics of Success 
 Success metrics for this project focus on several key performance indicators. High accuracy in gesture recognition is essential to ensure the system reliably interprets user commands. Low latency is also critical, as it directly impacts the system's responsiveness and efficiency. Seamless integration of vision and wearables is vital to demonstrating the system's adaptability and compatibility. A practical functionality test will be the system's ability to control a vehicle through a predetermined test course, demonstrating its effectiveness in real-world scenarios. 
 
 # 2. Related Work
 
-The work (DOI: 10.1007/978-3-031-05544-7_19) presents an intersection of gesture recognition and robot control by exploring the innovative approach of controlling a ROS car using the Mediapipe framework. However, there are some limitations to this approach that arise from running the computer vision algorithms on a personal computer.
+The work (DOI: 10.1007/978-3-031-05544-7_19) presents an intersection of gesture recognition and robot control by exploring the innovative approach of controlling a ROS car using the Mediapipe framework. However, some limitations to this approach arise from running the computer vision algorithms on a personal computer.
 
 One of the main drawbacks of running CV on a PC is that the reliance on a PC for processing limits the mobility and scalability of the system. For a truly mobile and flexible application, it would be advantageous to integrate the CV capabilities directly into the ROS car or to use more portable computing solutions. The current setup requires the ROS car to be within the effective range of the PC's processing and communication capabilities, which limits the operational range of the vehicle.
 
