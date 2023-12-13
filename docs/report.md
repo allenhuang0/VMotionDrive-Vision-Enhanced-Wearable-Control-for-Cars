@@ -31,25 +31,25 @@ The innovative aspect of our project lies in this seamless integration of gestur
 One of the primary challenges is creating a gesture recognition system that has a high accuracy and low processing time. Moreover, minimizing the latency in gesture recognition is a significant consideration for precise control, especially considering the computational power limitations of the Raspberry Pi platform. Additionally, ensuring a fluid transition between the wearable control and vision recognition modes is crucial to maintaining system efficacy and user engagement. Lastly, it is essential to design these wearables in a way that they are intuitive, user-friendly, and comfortable for prolonged use, thereby encouraging widespread adoption and a positive user experience.
 
 ## Requirements for Success
- To successfully complete our project,  we need access to technologies like MediaPipe for accurate hand recognitions, along with pipelines designed to accelerate processing speeds. The project also demands data filtering to get valid angle/acceleration data.
+ To successfully complete our project,  we need access to technologies like MediaPipe for accurate hand recognitions, along with pipelines designed to accelerate processing speeds. The project also employ data filtering to get valid angle/acceleration data.
  
 ## Metrics of Success 
 Success metrics for this project focus on several key performance indicators. High accuracy in gesture recognition is essential to ensure the system reliably interprets user commands. Low latency is also critical, as it directly impacts the system's responsiveness and efficiency. Seamless integration of vision and wearables is vital to demonstrating the system's adaptability and compatibility. A practical functionality test will be the system's ability to control a vehicle through a predetermined test course, demonstrating its effectiveness in real-world scenarios. 
 
 # 2. Related Work
 
-The work (DOI: 10.1007/978-3-031-05544-7_19) presents a intersection of gesture recognition and robot control by exploring the innovative approach of controlling a ROS car using the Mediapipe framework. However, there are some limitations to this approach that arise from running the computer vision algorithms on a personal computer.
+The work (DOI: 10.1007/978-3-031-05544-7_19) presents an intersection of gesture recognition and robot control by exploring the innovative approach of controlling a ROS car using the Mediapipe framework. However, there are some limitations to this approach that arise from running the computer vision algorithms on a personal computer.
 
 One of the main drawbacks of running CV on a PC is that the reliance on a PC for processing limits the mobility and scalability of the system. For a truly mobile and flexible application, it would be advantageous to integrate the CV capabilities directly into the ROS car or to use more portable computing solutions. The current setup requires the ROS car to be within the effective range of the PC's processing and communication capabilities, which limits the operational range of the vehicle.
 
-It is worth noting that many YouTube projects, using similar technologies and requiring a stationary camera setup relative to the person making the gestures. While these projects are innovative, they sometimes face challenges in gesture intuitiveness and interpretability, pointing to underlying Explainable AI (XAI) issues. In addition, these projects rely on a PC to run the computer vision algorithms, as opposed to the more integrated approach for the embedded systems. This reliance can introduce additional complexity and potential latency in the processing of the gestures. Nevertheless, these projects collectively contribute to the evolving landscape of gesture-based control in robotics, each offering unique insights and methodologies that push the boundaries of human-computer interaction.
+It is worth noting that many YouTube projects use similar technologies and require a stationary camera setup relative to the person making the gestures. While these projects are innovative, they face challenges in gesture interpretability, resulting in poor Explainable AI (XAI). In addition, these projects rely on a PC to run the computer vision algorithms, which is not really an embedded system solution.
 
 
 # 3. Technical Approach
 
 ## Overview
 
-As shown in the figure , our system includes two main signal processing streams, the first being the camera data for CV. The second is the gryo data form wearables, including the MPU6050 and ESP32. 
+As shown in the figure, our system includes two main signal processing streams, the first being the camera data for CV. The second is the Gryo data from wearables, including the MPU6050 and ESP32.
 
 ![](images/overview.png)
 
