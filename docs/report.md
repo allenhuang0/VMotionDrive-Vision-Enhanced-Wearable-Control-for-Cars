@@ -43,9 +43,44 @@ It is worth noting that many YouTube projects use discrete control using similar
 
 ## Overview
 
-As shown in Figure xx, our system includes two main signal processing streams, the first being the CV system, including the webcam. The second is wearables, including the MPU6050 and ESP32. 
+As shown in Figure xx, our system includes two main signal processing streams, the first being the camera data for CV. The second is the gryo data form wearables, including the MPU6050 and ESP32. 
 
-### Wearable
+## Wearable
+
+Sensor integration: The MPU6050, a micro-electron-mechanical system (MEMS), provides dual functionality as a three-axis gyroscope and a three-axis accelerometer. This sensor is capable of detecting both angular velocity and linear acceleration, providing a comprehensive data set of hand movements in 3D space.
+
+Data transfer to ESP32: Raw data from the MPU6050 is transferred to the ESP32 microcontroller via an I2C bus. This protocol was chosen for its high data transfer rates and robust error-checking capabilities, which are essential for accurate gesture capture.
+
+Data pre-processing: The ESP32 acts as a data transmitter, receiving and sending data between the Raspberry Pi and the mpu6050.
+
+Wireless data relay to Raspberry Pi: The ESP32 uses a Wi-Fi module to transmit the processed gyro data to the Raspberry Pi. The WebSocket protocol over Wi-Fi ensures a bi-directional, full-duplex communication channel, enabling efficient real-time data streaming. The Raspberry Pi also performs preliminary pre-processing, including digital low-pass filtering, to mitigate the effects of high-frequency noise and vibration on the sensor data. This step is critical to improving data quality.
+
+### Wearable Design and Optimization
+
+
+## Camera-based Gesture Detection System
+
+We use a wide-angle camera and advanced gesture recognition, MediaPipe, with a low frame rate connected to the Raspberry Pi for real-time gesture detection. The choice of camera is critical: its wide field of view captures a wide visual area, ensuring that no gesture goes undetected. 
+
+### Optimized CV Pipeline
+
+We have significantly optimized the Computer Vision (CV) pipeline, using advanced Python programming techniques to enhance its real-time hand gesture recognition capabilities. Central to these improvements is the use of multi-threading, which allows image capture and gesture interpretation tasks to be processed simultaneously. This parallel processing methodology has dramatically reduced system latency - a critical metric in real-time applications - from an initial 3 seconds to just 0.5 seconds, an 83% reduction in response time.
+
+Key to the efficiency of our pipeline is the implementation of a queuing system. This system ensures that video frames are processed sequentially as they are captured, preserving the chronological integrity of the data stream. This is essential for maintaining the accuracy of gesture recognition over time.
+
+A key enhancement to our CV pipeline is the transition from YUYV to MJPEG (Motion JPEG) video format. This strategic change addresses the bandwidth and processing power limitations of the YUYV format. By adopting MJPEG, which compresses each video frame independently, we have achieved a significant reduction in data size. This reduction allows video frames to be processed more quickly without sacrificing image quality, which is critical for accurate gesture recognition and interpretation.
+
+Further refinements to our pipeline include setting optimal parameters for the MJPEG format. By setting the frame rate to 20fps and the resolution to 640x360, we've been able to strike a balance between image clarity and system performance. This specific configuration not only improves the accuracy of gesture recognition but also results in a significant reduction in CPU usage - around 15%. This reduction in processing demand translates directly into improved energy efficiency, as shown in Figure xx.
+
+
+## Motor Control
+
+PWM signal generation for motor control: The integrated control signals are converted to PWM outputs. These signals precisely control the vehicle's motor controllers, regulating speed and steering mechanisms based on the user's gestures.
+
+
+
+
+
 
 
 # 4. Evaluation and Results
