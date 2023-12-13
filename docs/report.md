@@ -43,7 +43,10 @@ It is worth noting that many YouTube projects use discrete control using similar
 
 ## Overview
 
-As shown in Figure xx, our system includes two main signal processing streams, the first being the camera data for CV. The second is the gryo data form wearables, including the MPU6050 and ESP32. 
+As shown in the figure , our system includes two main signal processing streams, the first being the camera data for CV. The second is the gryo data form wearables, including the MPU6050 and ESP32. 
+
+![](images/overview.png)
+
 
 ## Wearable
 
