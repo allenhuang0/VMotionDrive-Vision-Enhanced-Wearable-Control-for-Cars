@@ -132,7 +132,9 @@ To quantitatively assess the system, we focus on three critical metrics: latency
 
 # 5. Discussion and Conclusions
 
+In conclusion, our project has demonstrated significant potential in the field of car control through wearable technology and computer vision systems. The proposed future improvements aim to address the current limitations and expand the capabilities of the system. By improving our system's accuracy, ergonomics, and computational power, we can pave the way for more intuitive, efficient, and user-friendly controls in vehicles. These improvements are crucial for the development of our project but also contribute to the broader field of human-computer interaction and vehicular technology.
 
+Future improvements in wearable technology focus on enhancing user comfort and sensor accuracy through ergonomic designs like ring-shaped wearables and implementing Kalman filters and advanced 9-axis gyro sensors. In computer vision systems, advancements include upgrading to more powerful processors like the Jetson Nano, integrating dual cameras for better depth perception and field of view, and optimizing machine learning models for embedded systems to streamline gesture recognition processes.
 
 
 # 6. References
