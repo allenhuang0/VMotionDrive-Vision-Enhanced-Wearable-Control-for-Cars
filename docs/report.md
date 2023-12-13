@@ -137,3 +137,9 @@ To quantitatively assess the system, we focus on three critical metrics: latency
 
 # 6. References
 
+Allena, C. D., De Leon, R. C., & Wong, Y. Y. (2022). Easy hand gesture control of a ROS-Car using Google MediaPipe for surveillance use. In *Lecture Notes in Computer Science* (pp. 247–260). [https://doi.org/10.1007/978-3-031-05544-7_19](https://doi.org/10.1007/978-3-031-05544-7_19)
+
+L. Fiorini et al., "Daily Gesture Recognition During Human-Robot Interaction Combining Vision and Wearable Systems," in IEEE Sensors Journal, vol. 21, no. 20, pp. 23568-23577, 15 Oct.15, 2021, doi: 10.1109/JSEN.2021.3108011.
+
+
+
