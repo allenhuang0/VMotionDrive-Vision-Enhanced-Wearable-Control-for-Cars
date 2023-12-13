@@ -104,6 +104,8 @@ PWM signal generation for motor control: The integrated control signals are conv
 ## Testing
 Our evaluation strategy is meticulously designed to thoroughly assess the performance and reliability of our autonomous vehicle control system, encompassing both controlled and real-world testing environments.
 
+![](images/testing.png)
+
 ### Stationary Testing:
 * This test aims to isolate and evaluate the system's response to input controls in a static environment.
 * The vehicle is positioned with its wheels off the ground, simulating movement without physical displacement.
